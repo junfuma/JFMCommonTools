@@ -1,0 +1,6 @@
+framework module JFMCommonTools {
+  umbrella header "JFMCommonTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
