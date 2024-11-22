@@ -16,6 +16,5 @@
 #import "UIView+GradientLayer.h"
 #import "UIColor+AlphaColor.h"
 #import "JFMultiDelegate.h"
-
 #import "BaseConstants.h"
 #endif /* JFMTool_h */

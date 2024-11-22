@@ -18,6 +18,7 @@
 #import "NSObject+CurrentViewController.h"
 #import "UIApplication+KeyWindow.h"
 #import "UIColor+AlphaColor.h"
+#import "UIResponder+JFRouter.h"
 #import "UIView+GradientLayer.h"
 
 FOUNDATION_EXPORT double JFMCommonToolsVersionNumber;

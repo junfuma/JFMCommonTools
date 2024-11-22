@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #define gmd_multi_delegate_header(protocol_name, p_name)                                \
-@property (nonatomic, strong, nullable) GoMultiDelegate<protocol_name> *p_name;         \
+@property (nonatomic, strong, nullable) JFMultiDelegate<protocol_name> *p_name;         \
 -(void)add##p_name:(id<protocol_name>)delegate;                                         \
 -(void)remove##p_name:(id<protocol_name>)delegate;
 
 #define gmd_multi_delegate_imp(protocol_name, p_name)                                   \
-- (GoMultiDelegate<protocol_name> *)p_name {                                            \
+- (JFMultiDelegate<protocol_name> *)p_name {                                            \
   if (!_##p_name) {                                                                     \
-    _##p_name = [[GoMultiDelegate<protocol_name> alloc] init];                          \
+    _##p_name = [[JFMultiDelegate<protocol_name> alloc] init];                          \
   }                                                                                     \
   return _##p_name;                                                                     \
 }                                                                                       \

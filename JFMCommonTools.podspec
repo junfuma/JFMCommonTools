@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JFMCommonTools'
-  s.version          = '1.0.0'
+  s.version          = '1.0.0.beta.1'
   s.summary          = 'A short description of JFMCommonTools.Contains some common oc tool classes'
 
 # This description is used to generate tags and improve search results.

@@ -22,7 +22,7 @@
 }
 
 - (instancetype)initWithTimeInterval:(NSTimeInterval)interval repeat:(BOOL)repeat queue:(dispatch_queue_t)queue block:(dispatch_block_t)block {
-    NSAssert(queue != NULL, @"queue can't be NULL while create GoGCDTimer");
+    NSAssert(queue != NULL, @"queue can't be NULL while create JFGCDTimer");
     
     if (self = [super init]) {
         _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
