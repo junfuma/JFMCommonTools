@@ -1,5 +1,5 @@
 PODS:
-  - JFMCommonTools (0.1.0)
+  - JFMCommonTools (1.0.0)
 
 DEPENDENCIES:
   - JFMCommonTools (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JFMCommonTools: a76670d1bb1cb9e853e6a5869a8589018cc67481
+  JFMCommonTools: 269d6e78884813daf1d59ca20a9f3cedeb4dcd04
 
-PODFILE CHECKSUM: 4ea45c9c0a58c775de4330d2fc87fc05663f7e94
+PODFILE CHECKSUM: 14c9f0a1f7543816e77b9598aa310bd0064689ec
 
 COCOAPODS: 1.15.2

@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10AD1827ABFBCC373043DC13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		10AD1827ABFBCC373043DC13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		12D9A2056671F1F7B0C49283 /* Pods-JFMCommonTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMCommonTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-JFMCommonTools_Tests/Pods-JFMCommonTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JFMCommonTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFMCommonTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		72741E6B0A819FE173E2F16E /* Pods-JFMCommonTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMCommonTools_Example.debug.xcconfig"; path = "Target Support Files/Pods-JFMCommonTools_Example/Pods-JFMCommonTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9583904BDAEEAAAA4EB57E15 /* Pods_JFMCommonTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFMCommonTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CF3C256D5256D1C3B41B02 /* JFMCommonTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JFMCommonTools.podspec; path = ../JFMCommonTools.podspec; sourceTree = "<group>"; };
-		B038A3819A15A6BB47AC4D10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A0CF3C256D5256D1C3B41B02 /* JFMCommonTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JFMCommonTools.podspec; path = ../JFMCommonTools.podspec; sourceTree = "<group>"; };
+		B038A3819A15A6BB47AC4D10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DEE131921C2DD027489F1A21 /* Pods_JFMCommonTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFMCommonTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B8A049C48AA7145D203076 /* Pods-JFMCommonTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMCommonTools_Example.release.xcconfig"; path = "Target Support Files/Pods-JFMCommonTools_Example/Pods-JFMCommonTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				6661A6A7A7408E384173C52E /* Pods-JFMCommonTools_Tests.debug.xcconfig */,
 				12D9A2056671F1F7B0C49283 /* Pods-JFMCommonTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = majunfu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Q4Y9Z5SA5S;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,9 +497,11 @@
 			baseConfigurationReference = 72741E6B0A819FE173E2F16E /* Pods-JFMCommonTools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4Y9Z5SA5S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFMCommonTools/JFMCommonTools-Prefix.pch";
 				INFOPLIST_FILE = "JFMCommonTools/JFMCommonTools-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +515,11 @@
 			baseConfigurationReference = E6B8A049C48AA7145D203076 /* Pods-JFMCommonTools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4Y9Z5SA5S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFMCommonTools/JFMCommonTools-Prefix.pch";
 				INFOPLIST_FILE = "JFMCommonTools/JFMCommonTools-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

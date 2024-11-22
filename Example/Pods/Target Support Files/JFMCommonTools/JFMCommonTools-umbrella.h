@@ -10,7 +10,15 @@
 #endif
 #endif
 
-#import "JFTool.h"
+#import "BaseConstants.h"
+#import "JFExtendedButton.h"
+#import "JFGCDTimer.h"
+#import "JFMTool.h"
+#import "JFMultiDelegate.h"
+#import "NSObject+CurrentViewController.h"
+#import "UIApplication+KeyWindow.h"
+#import "UIColor+AlphaColor.h"
+#import "UIView+GradientLayer.h"
 
 FOUNDATION_EXPORT double JFMCommonToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char JFMCommonToolsVersionString[];
